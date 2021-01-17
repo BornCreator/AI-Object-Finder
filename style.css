@@ -4,3 +4,15 @@ canvas{
     box-shadow:5px 5px 10px black;
     margin-top:180px;
 }
+body{
+    background-image:url('bg.gif');
+    background-size: repeat;
+}
+*{
+    cursor:none;
+}
+#objectName{cursor:none;}
+.btn{
+    cursor:none;
+}
+.form-control{cursor:none;}
