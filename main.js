@@ -24,13 +24,16 @@ function draw(){
             m=i[f].width;
             n=i[f].height;
             if(e==j){
-                p=new SpeechSynthesisUtterance('Object Mentioned Found');
-                console.log('Object Mentioned Found!');
+                p=new SpeechSynthesisUtterance('Object Mentioned was Found');
+                console.log('Object Mentioned was Found!');
+                document.getElementById('found?').innerHTML='Object Found';
             }else{
-                p=new SpeechSynthesisUtterance('Object Mentioned Was So Un-Foundable');
+                p=new SpeechSynthesisUtterance('Object Mentioned Was not found');
                 console.log("Mentioned Object Wasn't Found");
+                document.getElementById('found?').innerHTML='Object not Found';
             }
                 o.speak(p);
+                document.getElementById('status').innerHTML='Status: Objects Detected';
             c.stop();
             d.detect(h);
         }
