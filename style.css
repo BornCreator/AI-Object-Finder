@@ -8,11 +8,3 @@ body{
     background-image:url('bg.gif');
     background-size: repeat;
 }
-*{
-    cursor:none;
-}
-#objectName{cursor:none;}
-.btn{
-    cursor:none;
-}
-.form-control{cursor:none;}
